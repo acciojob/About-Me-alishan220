@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+	<style>
+		/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+section {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ #skills .skill {
+            margin-bottom: 20px;
+        }
+
+        .skill-bar {
+            background: #e0e0e0;
+            border-radius: 5px;
+            position: relative;
+            height: 20px;
+            width: 100%;
+        }
+
+        .skill-bar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: #4caf50;
+            border-radius: 5px;
+            width: 0;
+            transition: width 0.5s ease;
+        }
+
+        .skill-bar[data-skill="90"]::before {
+            width: 90%;
+        }
+
+        .skill-bar[data-skill="75"]::before {
+            width: 75%;
+        }
+
+        .skill-bar[data-skill="70"]::before {
+            width: 70%;
+        }
+
+        .skill-bar[data-skill="95"]::before {
+            width: 95%;
+        }
+
+
+	</style>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="your-picture.jpg" alt="Your Picture">
+        <h1>Name</h1>
+        <p>John Doe</p>
+    </header>
+    
+    <section id="email">
+        <h2>Email</h2>
+        <p>your.email@example.com</p>
+    </section>
+    
+    <section id="profile">
+        <h2>Profile</h2>
+        <p>The Profile for which you are applying.</p>
+    </section>
+    
+    <section id="about-me">
+        <h2>About me</h2>
+        <p>I'm a dedicated professional with a passion for [your field or interest]. With [number] years of experience in [relevant experience or skills], I specialize in [specific skills or areas]. I enjoy [hobbies or activities related to your profession or personal interests], and I'm always eager to learn new things and tackle new challenges.</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <h3>Skill 1</h3>
+            <div class="skill-bar" data-skill="90"></div>
+        </div>
+        <div class="skill">
+            <h3>Skill 2</h3>
+            <div class="skill-bar" data-skill="75"></div>
+        </div>
+        <div class="skill">
+            <h3>Skill 3</h3>
+            <div class="skill-bar" data-skill="70"></div>
+        </div>
+        <div class="skill">
+            <h3>Skill 4</h3>
+            <div class="skill-bar" data-skill="95"></div>
+        </div>
+    </section>
+</body>
+</html>
 
